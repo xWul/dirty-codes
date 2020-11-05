@@ -1,5 +1,9 @@
 # Dirty Codes 🗑
 
+## Exercises
+- [Movies](https://github.com/xWul/dirty-codes/tree/master/src/pages/Movies)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
