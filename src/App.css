@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+
+.App-main{ 
+  background-color: #333;
+  padding: 30px;
+  box-sizing: border-box;
+  min-height: 100vh; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-main h1{ 
+  color: #FFF;
+}  
+
+.App-content {
+  padding: 20px 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-button {
+  padding: 6px 18px;
+  font-size: 18px;
+  cursor: pointer;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App-button {
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.App-button:hover, .App-button:focus {
+  border-color: var(--hover);
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.offset-button {
+  --color: #199bbc;
+  --hover: #1973bc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.offset-button {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset-button:hover, .offset-button:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
 }

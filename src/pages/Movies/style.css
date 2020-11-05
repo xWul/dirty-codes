@@ -1,0 +1,136 @@
+.movies__main{ 
+  background-color: #333;
+  padding: 30px;
+  box-sizing: border-box;
+  min-height: 100vh; 
+}
+
+.movies__main h1{ 
+  color: #FFF;
+  font-weight: 400;
+  font-size: 20px;
+}  
+
+.movies__content {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movies__content .control {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.control select {
+  padding: 6px 15px;
+  background-color: #333;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.control select option {
+
+}
+
+.movies__list {
+  color: #FFF;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movies__list .movie {
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 18%;
+  border-radius: 10px;
+  margin-right: 2%;
+  margin-top: 40px;
+  position: relative;
+}
+
+
+.movie .movie__cover {
+  background-color: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.movie .movie__cover:hover {
+  transform: scale(1.05);
+  transition: all .8s;
+
+}
+
+.movie__cover .movie__cover--rating {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #FFF;
+  color: #333;
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie__cover--rating.high{
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(246,203,46,1) 28%);
+}
+
+.movie__cover--rating.medium{ 
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(246,203,46,1) 100%);
+}
+
+.movie__cover .movie__cover--title {
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 1px 1px #333;
+}
+
+
+.movie__cover .movie__cover--details {
+  font-size: 14px;
+  text-shadow: 1px 1px #333;
+}
+
+.movie .movie__description { 
+  background-color: rgba(0, 0, 0, .9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  cursor: pointer;
+}
+
+.movie__description .movie__cover--director {
+  font-size: 14px;
+  font-weight: 500;
+  text-shadow: 1px 1px #333;
+}
